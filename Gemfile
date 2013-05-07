@@ -10,6 +10,7 @@ group :production do
 end
 group :development, :test do
   gem 'sqlite3'
+  gem "annotate", "~> 2.5.0"
 end
 
 # Use SCSS for stylesheets
