@@ -1,5 +1,5 @@
 <div class="post-form">
-		<%= form_for(@post) do |f| %>
+	<%= form_for(@post) do |f| %>
 
 		<%= f.label :title %>
 		<%= f.text_field :title, placeholder: "New Post" %>
@@ -13,6 +13,6 @@
 		<%= f.label :published %>
 		<%= f.check_box :published %>
 
-		<%= f.button "Save Post", class: "button" %>
+		<%= f.button "Update Post", class: "button" %>
 	<% end %>
 </div>

@@ -4,6 +4,7 @@ class PostsController < ApplicationController
   end
 
   def show
+    @post = Post.find_by_id(params[:id])
   end
 
   def new
@@ -13,10 +14,14 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     if @post.save
-      render "new"
+      redirect_to root_path
     else
       render "new"
     end
+  end
+
+  def edit
+    @post = Post.find_by_id(params[:id])
   end
 
   def update

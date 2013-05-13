@@ -1,0 +1,7 @@
+<article class="post">
+	<%= link_to(edit_post_path(@post)) do %>
+		<h1 class="post-title"><%= @post.title %></h1>
+	<% end %>
+	<h2 class="post-date">Posted <%= distance_of_time_in_words_to_now(@post.updated_at) %> ago</h2>
+	<div class="post-body"><%= @post.body %></div>
+</article>
