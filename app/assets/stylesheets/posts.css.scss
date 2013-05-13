@@ -79,18 +79,12 @@ header {
 		@extend .button;
 		background-color: #EA5189;
 		box-shadow: 0px 5px 0px #CE4675;
-		&:hover, &:active {
-			box-shadow: 0px -2px 0px #CE4675;
-		}
 	}
 
 	.linkedin {
 		@extend .button;
 		background-color: #2877B5;
 		box-shadow: 0px 5px 0px #015a9e;
-		&:hover, &:active {
-			box-shadow: 0px -2px 0px #015a9e;
-		}
 	}
 
 }
