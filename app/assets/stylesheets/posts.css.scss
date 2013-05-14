@@ -53,6 +53,7 @@ header {
 	width: 100%;
 
 	a.home {
+		position: relative;
 		color: rgba(255,255,255, .9);
 		font-weight: 900;
 		// font-family: "source-sans-pro", sans-serif;
@@ -61,6 +62,18 @@ header {
 		text-decoration: none;
 		&:hover {
 			color: #ffffff;
+		}
+		&:after {
+		content: "";
+		width: 0;
+		height: 0;
+		border-top: 20px solid #ffffff;
+		border-right: 20px solid transparent;
+		border-left: 20px solid #ffffff;
+		border-bottom: 20px solid transparent;
+		position: absolute;
+		top: -30px;
+		left: 122px;
 		}
 	}
 
@@ -87,6 +100,22 @@ header {
 		box-shadow: 0px 5px 0px #015a9e;
 	}
 
+}
+
+#about-bubble {
+	background-color: #ffffff;
+	height: 45px;
+	div {
+		margin: 0px auto;
+		max-width: 700px;
+	}
+	p {
+		text-align: center;
+		color: #999999;
+		font-size: 22px;
+		font-weight: 400;
+		line-height: 45px;
+	}
 }
 
 article.post {
@@ -140,7 +169,7 @@ article.post {
 			font-size: 52px;
 			font-weight: 700;
 			line-height: 2;
-			margin-top: 0px;
+			margin-top: -25px;
 		}
 		#post_tag {
 			font-size: 36px;
@@ -149,6 +178,7 @@ article.post {
 		}
 		input[type="text"], textarea {
 			@include box_sizing;
+			background-color: #F7EEE5;
 			font-family: "source-sans-pro", sans-serif;
 			display: block;
 			width: 100%;
@@ -160,14 +190,12 @@ article.post {
 			line-height: 1.9;
 			border-radius: 10px;
 			margin-top: 25px;
-			padding: 0px 25px;
 			&:focus {
-				background-color: #F7EEE5;
+
 				outline: none;
 			}
 		}
 		textarea {
-			padding: 10px 25px;
 			overflow: hidden;
 		}
 		input[type="checkbox"] {
