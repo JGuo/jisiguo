@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  http_basic_authenticate_with :name => Jisiguo.config.name, :password => Jisiguo.config.password, :except => [:index, :show]
+
   def index
     @posts = Post.all
   end
