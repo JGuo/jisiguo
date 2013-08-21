@@ -7,6 +7,10 @@ Jisiguo::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'posts#index'
 
+  match '/about', to: 'posts#about', via: 'get', as: 'about'
+  match '/projects', to: 'posts#projects', via: 'get', as: 'projects'
+  match '/contact', to: 'posts#contact', via: 'get', as: 'contact'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

@@ -1,5 +1,14 @@
 class PostsController < ApplicationController
-  http_basic_authenticate_with :name => Jisiguo.config.name, :password => Jisiguo.config.password, :except => [:index, :show]
+  http_basic_authenticate_with :name => Jisiguo.config.name, :password => Jisiguo.config.password, :except => [:index, :show] if Rails.env.production?
+
+  def about
+  end
+
+  def projects
+  end
+
+  def contact
+  end
 
   def index
     @posts = Post.all

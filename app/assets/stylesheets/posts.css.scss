@@ -27,6 +27,8 @@ div#app {
 }
 
 .button {
+	background-color: #cccccc;
+	box-shadow: 0px 5px 0px #bbbbbb;
 	display: inline-block;
 	position: relative;
 	padding: 10px 25px 10px 25px;
@@ -45,6 +47,24 @@ div#app {
 	};
 }
 
+.twitter {
+	@extend .button;
+	background-color: #00ACED;
+	box-shadow: 0px 5px 0px #0090ea;
+}
+
+.dribbble {
+	@extend .button;
+	background-color: #EA5189;
+	box-shadow: 0px 5px 0px #CE4675;
+}
+
+.linkedin {
+	@extend .button;
+	background-color: #2877B5;
+	box-shadow: 0px 5px 0px #015a9e;
+}
+
 header {
 	@include box_sizing;
 	margin: 0px auto;
@@ -54,7 +74,7 @@ header {
 
 	a.home {
 		position: relative;
-		color: rgba(255,255,255, .9);
+		color: rgba(255,255,255, 1);
 		font-weight: 900;
 		// font-family: "source-sans-pro", sans-serif;
 		font-size: 100px;
@@ -80,24 +100,6 @@ header {
 	nav {
 		margin: 20px 0px 0px 0px;
 		float: right;
-	}
-
-	.twitter {
-		@extend .button;
-		background-color: #00ACED;
-		box-shadow: 0px 5px 0px #0090ea;
-	}
-
-	.dribbble {
-		@extend .button;
-		background-color: #EA5189;
-		box-shadow: 0px 5px 0px #CE4675;
-	}
-
-	.linkedin {
-		@extend .button;
-		background-color: #2877B5;
-		box-shadow: 0px 5px 0px #015a9e;
 	}
 
 }
