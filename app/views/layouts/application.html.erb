@@ -15,8 +15,10 @@
     <%= render 'layouts/about' %>
   </section>
   <div id="app">
-	 <%= render 'layouts/header' %>
-	 <%= yield %>
+    <%= render 'layouts/header' %>
+    <div class="header-push">
+	    <%= yield %>
+    </div>
   </div>
 </body>
 </html>

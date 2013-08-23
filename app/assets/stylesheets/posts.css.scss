@@ -1,7 +1,3 @@
-// Place all the styles related to the Posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 /* mixins, variables, etc. */
 
 $grayMediumLight: #eaeaea;
@@ -14,118 +10,14 @@ $grayMediumLight: #eaeaea;
 
 /* End mixins, variables, etc. */
 
-body {
-	font-family: "source-sans-pro", sans-serif;
-	background-color: #F7EEE5;
-}
-
-div#app {
-	margin: 0px auto;
-	max-width: 700px;
-	width: 100%;
-	overflow: none;
-}
-
-.button {
-	background-color: #cccccc;
-	box-shadow: 0px 5px 0px #bbbbbb;
-	display: inline-block;
-	position: relative;
-	padding: 10px 25px 10px 25px;
-	border-radius: 10px;
-	font-weight: 700;
-	font-size: 20px;
-	color: rgba(255,255,255, 1);
-	text-decoration: none;
-	&:hover, &:active {
-		top: 5px;
-		box-shadow: 0px 0px 0px;
-	}
-	margin-right: 10px;
-	&:last-child {
-		margin-right: 0px;
-	};
-}
-
-.twitter {
-	@extend .button;
-	background-color: #00ACED;
-	box-shadow: 0px 5px 0px #0090ea;
-}
-
-.dribbble {
-	@extend .button;
-	background-color: #EA5189;
-	box-shadow: 0px 5px 0px #CE4675;
-}
-
-.linkedin {
-	@extend .button;
-	background-color: #2877B5;
-	box-shadow: 0px 5px 0px #015a9e;
-}
-
-header {
-	@include box_sizing;
-	margin: 0px auto;
-	padding: 20px 0px;
-	overflow: hidden;
-	width: 100%;
-
-	a.home {
-		position: relative;
-		color: rgba(255,255,255, 1);
-		font-weight: 900;
-		// font-family: "source-sans-pro", sans-serif;
-		font-size: 100px;
-		float: left;
-		text-decoration: none;
-		&:hover {
-			color: #ffffff;
-		}
-		&:after {
-		content: "";
-		width: 0;
-		height: 0;
-		border-top: 20px solid #ffffff;
-		border-right: 20px solid transparent;
-		border-left: 20px solid #ffffff;
-		border-bottom: 20px solid transparent;
-		position: absolute;
-		top: -30px;
-		left: 122px;
-		}
-	}
-
-	nav {
-		margin: 20px 0px 0px 0px;
-		float: right;
-	}
-
-}
-
-#about-bubble {
-	background-color: #ffffff;
-	height: 45px;
-	div {
-		margin: 0px auto;
-		max-width: 700px;
-	}
-	p {
-		text-align: center;
-		color: #999999;
-		font-size: 22px;
-		font-weight: 400;
-		line-height: 45px;
-		a {
-			color: #444444;
-			text-decoration: none;
-		}
-	}
-}
-
 article.post {
+	max-width: 700px;
+	padding-top: 40px;
 	margin: 0px auto 50px;
+	&:first-child {
+		margin-top: 0px;
+		padding-top: 40px;
+	}
 	a.article-link {
 		display: block;
 		text-decoration: none;
@@ -136,7 +28,7 @@ article.post {
 		};
 	}
 	h1.post-title {
-		color: #444444;
+		color: #3d6191;
 		font-size: 52px;
 		font-weight: 700;
 		line-height: 1;
