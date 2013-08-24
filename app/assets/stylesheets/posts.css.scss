@@ -1,6 +1,12 @@
 /* mixins, variables, etc. */
 
 $grayMediumLight: #eaeaea;
+$postTitle: #404149;
+$postDate: #999999;
+$postH1: #404149;
+$postH2: #404149;
+$postP: #63646b;
+$postA: #42b4c0;
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -23,46 +29,56 @@ article.post {
 		text-decoration: none;
 		&:hover {
 			h1 {
-				color: #999999;
+				color: #527dbf;
 			}
 		};
 	}
 	h1.post-title {
 		text-align: center;
-		color: #27333d;
+		// font-family: "brandon-grotesque";
+		color: $postTitle;
 		font-size: 52px;
 		font-weight: 700;
 		line-height: 1;
 	}
 	h2.post-date {
+		text-align: center;
+		// font-family: "brandon-grotesque";
 		margin-top: 10px;
-		color: #999999;
+		color: $postDate;
 		font-size: 18px;
 		font-weight: 400;
 	}
 	h1 {
-		color: #444444;
+		// font-family: "brandon-grotesque";
+		color: $postH1;
 		font-size: 36px;
 		font-weight: 700;
 		line-height: 1;
 		margin-bottom: 5px;
 	}
 	h2{
-		color: #444444;
+		// font-family: "brandon-grotesque";
+		color: $postH2;
 		font-size: 32px;
 		font-weight: 700;
 		line-height: 1.2;
-		margin-bottom: 5px;
+		margin-bottom: 15px;
 	}
 	div.post-body {
 		margin-top: 25px;
 	}
 	p {
-		margin-bottom: 30px;
-		color: #666666;
+		font-family: "rooney-web";
+		margin-bottom: 37px;
+		color: $postP;
 		font-size: 26px;
-		font-weight: 400;
-		line-height: 1.6;
+		font-weight: 300;
+		line-height: 1.5;
+	}
+	a {
+		color: $postA;
+		text-decoration: none;
 	}
 }
 

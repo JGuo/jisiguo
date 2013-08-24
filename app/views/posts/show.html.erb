@@ -1,8 +1,6 @@
-<div class="cover-image"></div>
+<div class="post-cover"></div>
 <article class="post">
-	<%= link_to(edit_post_path(@post), class:"article-link") do %>
-		<h1 class="post-title"><%= @post.title %></h1>
-	<% end %>
+	<h1 class="post-title"><%= @post.title %></h1>
 	<h2 class="post-date">Posted <%= distance_of_time_in_words_to_now(@post.updated_at) %> ago</h2>
 	<div class="post-body"><%= markdown(@post.body) %></div>
 </article>

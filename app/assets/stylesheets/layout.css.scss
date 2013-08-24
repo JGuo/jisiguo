@@ -1,6 +1,7 @@
 /* mixins, variables, etc. */
 
 $grayMediumLight: #eaeaea;
+$backgroundColor: #fcfcff;
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -23,7 +24,11 @@ div#app {
 
 .content-container {
 	margin-top: 435px;
-	background-color: #f6f6f6;
+	background-color: $backgroundColor;
+}
+
+.typekit-badge {
+	display: none !important;
 }
 
 .button {

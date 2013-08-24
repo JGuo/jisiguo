@@ -4,13 +4,13 @@ class PostsController < ApplicationController
   def about
   end
 
-  def projects
+  def work
   end
 
   def contact
   end
 
-  def index
+  def blog
     @posts = Post.all
   end
 

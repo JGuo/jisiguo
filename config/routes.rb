@@ -5,11 +5,13 @@ Jisiguo::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'posts#index'
+  root 'posts#blog'
 
   match '/about', to: 'posts#about', via: 'get', as: 'about'
-  match '/projects', to: 'posts#projects', via: 'get', as: 'projects'
+  match '/work', to: 'posts#work', via: 'get', as: 'work'
   match '/contact', to: 'posts#contact', via: 'get', as: 'contact'
+  match '/blog', to: 'posts#blog', via: 'get', as: 'blog'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
