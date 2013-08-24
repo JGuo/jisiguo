@@ -83,6 +83,8 @@ article.post {
 }
 
 .post-form {
+	max-width: 700px;
+	margin: 0px auto;
 	h1 {
 		color: #444444;
 		font-size: 52px;
@@ -107,7 +109,7 @@ article.post {
 		}
 		input[type="text"], textarea {
 			@include box_sizing;
-			background-color: #F7EEE5;
+			// background-color: #F7EEE5;
 			font-family: "source-sans-pro", sans-serif;
 			display: block;
 			width: 100%;

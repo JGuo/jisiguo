@@ -42,8 +42,9 @@ header {
 		margin: 1px 0px 0px 0px;
 		float: right;
 		a {
+			font-family: "source-sans-pro", sans-serif;
 			font-size: 22px;
-			font-weight: 500;
+			font-weight: 600;
 			color: $headerColor;
 			text-decoration: none;
 			margin-left: 45px;
@@ -60,7 +61,7 @@ header {
 
 }
 
-.about-cover {
+.default-cover {
 	position: fixed;
 	width: 100%;
 	top: 0;
@@ -71,23 +72,27 @@ header {
 	height: 500px;
 }
 
+.about-cover {
+	@extend .default-cover;
+}
+
 .work-cover {
-	@extend .about-cover;
+	@extend .default-cover;
 	background-image: url("gta.jpg");
 }
 
 .blog-cover {
-	@extend .about-cover;
+	@extend .default-cover;
 	background-image: url("Smoke.png");
 }
 
 .contact-cover {
-	@extend .about-cover;
+	@extend .default-cover;
 	background-image: url("chicago.jpg");
 }
 
 .post-cover {
-	@extend .about-cover;
+	@extend .default-cover;
 	background-image: url("tester.jpg");
 }
 
