@@ -28,7 +28,8 @@ article.post {
 		};
 	}
 	h1.post-title {
-		color: #3d6191;
+		text-align: center;
+		color: #27333d;
 		font-size: 52px;
 		font-weight: 700;
 		line-height: 1;
@@ -41,14 +42,14 @@ article.post {
 	}
 	h1 {
 		color: #444444;
-		font-size: 32px;
+		font-size: 36px;
 		font-weight: 700;
 		line-height: 1;
 		margin-bottom: 5px;
 	}
 	h2{
 		color: #444444;
-		font-size: 26px;
+		font-size: 32px;
 		font-weight: 700;
 		line-height: 1.2;
 		margin-bottom: 5px;
@@ -58,10 +59,10 @@ article.post {
 	}
 	p {
 		margin-bottom: 30px;
-		color: #444444;
-		font-size: 22px;
+		color: #666666;
+		font-size: 26px;
 		font-weight: 400;
-		line-height: 1.5;
+		line-height: 1.6;
 	}
 }
 

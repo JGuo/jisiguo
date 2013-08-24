@@ -12,7 +12,6 @@ $grayMediumLight: #eaeaea;
 
 body {
 	font-family: "source-sans-pro", sans-serif;
-	background-color: #edeff2;
 }
 
 div#app {
@@ -22,9 +21,9 @@ div#app {
 	overflow: none;
 }
 
-.header-push {
-	margin-top: 255px;
-	background-color: #edeff2;
+.content-container {
+	margin-top: 435px;
+	background-color: #f6f6f6;
 }
 
 .button {

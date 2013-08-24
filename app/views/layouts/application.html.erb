@@ -11,12 +11,9 @@
   <%= render 'layouts/typekit' %>
 </head>
 <body>
-  <section id="about-bubble">
-    <%= render 'layouts/about' %>
-  </section>
   <div id="app">
     <%= render 'layouts/header' %>
-    <div class="header-push">
+    <div class="content-container">
 	    <%= yield %>
     </div>
   </div>
