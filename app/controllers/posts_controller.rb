@@ -10,7 +10,7 @@ class PostsController < ApplicationController
   def contact
   end
 
-  def blog
+  def index
     @posts = Post.all
   end
 
