@@ -6,7 +6,7 @@ $postDate: #999999;
 $postH1: #404149;
 $postH2: #404149;
 $postP: #63646b;
-$postA: #42b4c0;
+$linkColor: #42b4c0;
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -77,7 +77,7 @@ article.post {
 		line-height: 1.5;
 	}
 	a {
-		color: $postA;
+		color: $linkColor;
 		text-decoration: none;
 	}
 }
