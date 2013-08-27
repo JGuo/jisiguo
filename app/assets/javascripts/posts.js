@@ -25,34 +25,30 @@ $(function(){
 	,"My name means \"lucky\" in Chinese."
 	]
 
-	var used = [];
+	function shuffle(o){ //v1.0
+    	for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+    	return o;
+	};
 
-	// This function is too slow, need to use a shuffled array
-	// function duplicateCheck(x) {
-	// 	if (used.indexOf(x) > -1) {
-	// 		console.log("duplicate")
-	// 		if (used.length == 21) {
-	// 			used = [];
-	// 			used.push(x);
-	// 			return x;
-	// 		}
-	// 		x = Math.floor(Math.random()*21);
-	// 		duplicateCheck(x);
-	// 	}
-	// 	else {
-	// 		used.push(x);
-	// 		return x;
-	// 		console.log("not duplicate")
-	// 	}
-	// }
+	var list = [];
+	for (var i = 0; i <= 21; i++) {
+	    list.push(i);
+	}
 
+	var shuffled = shuffle(list);
+
+	var index = 0;
 
 	function changeText() {
-		var i = Math.floor(Math.random()*21);
-		// $("#about-me").html(text[duplicateCheck(i)]);
-		$("#about-me").html(text[i]);
-		used.push(i);
-		console.log(used);
+		var x = shuffled[index];
+		$("#about-me").html(text[x]);
+		console.log(x);
+		index++;
+		if(index>21) {
+			console.log("RESTART!")
+			index = 0;
+			shuffled = shuffle(list);
+		}
 	}
 
 	$(".home").mouseenter(
