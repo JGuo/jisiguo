@@ -96,6 +96,20 @@ header {
 	background-image: url("scanner5.jpg");
 }
 
+.about-area {
+	display: inline-block;
+}
+
+#about-me {
+		font-family: "rooney-web";
+		margin-bottom: 37px;
+		color: $headerHover;
+		font-size: 22px;
+		font-weight: 400;
+		line-height: 20px;
+		margin-left: 10px;
+}
+
 
 #about-bubble {
 	background-color: #ffffff;
