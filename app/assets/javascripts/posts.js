@@ -21,7 +21,7 @@ $(function(){
 	,"I'm interested in both software and hardware design."
 	,"I'm a product designer, specializing in UX."
 	,"I have recently gotten into cycling."
-	,"I'm very interested in <a target=\"_blank\"href=\"http://en.wikipedia.org/wiki/Flow_(psychology)\">flow</a> and <a target=\"_blank\"href=\"http://en.wikipedia.org/wiki/Positive_psychology\">positive psychology.</a>"
+	,"I'm very interested in the theory of <a target=\"_blank\"href=\"http://en.wikipedia.org/wiki/Flow_(psychology)\">flow</a>.</a>"
 	,"My name means \"lucky\" in Chinese."
 	]
 
@@ -51,17 +51,21 @@ $(function(){
 		}
 	}
 
-	$(".home").mouseenter(
-	  function () {
-	  	changeText();
-	  	$("#about-me:hidden").fadeIn(500);
-	  }
-	);
+	function hoverListener() {
+		$(".home").mouseenter(
+		  function () {
+		  	changeText();
+		  	$("#about-me:hidden").fadeIn(500);
+		  }
+		);
 
-	$("#header").mouseleave(
-	  function () {
-	    $("#about-me:visible").fadeOut(500);
-	  }
-	);
+		$("#header").mouseleave(
+		  function () {
+		    $("#about-me:visible").fadeOut(500);
+		  }
+		);
+	}
+
+	hoverListener();
 
 });
