@@ -1,11 +1,14 @@
 /* mixins, variables, etc. */
 
+$backgroundColor: #fcfcff;
+
 $grayMediumLight: #eaeaea;
 $postTitle: #404149;
 $postDate: #999999;
 $postH1: #404149;
 $postH2: #404149;
-$postP: #63646b;
+$postH3: #404149;
+$postColor: #63646b;
 $linkColor: #42b4c0;
 
 @mixin box_sizing {
@@ -50,7 +53,7 @@ article.post {
 		font-weight: 400;
 	}
 	h1 {
-		font-family: "brandon-grotesque";
+		// font-family: "brandon-grotesque";
 		color: $postH1;
 		font-size: 36px;
 		font-weight: 700;
@@ -65,21 +68,68 @@ article.post {
 		line-height: 1.2;
 		margin-bottom: 15px;
 	}
+	h3 {
+		color: $postH3;
+		font-size: 28px;
+		font-weight: 700;
+		line-height: 1.2;
+		margin-bottom: 15px;
+	}
+	hr {
+		margin: 5em 8em;
+		border: 1px solid rgba(0,0,0,.1);
+	}
 	div.post-body {
 		margin-top: 25px;
 	}
 	p {
 		font-family: "rooney-web";
 		margin-bottom: 37px;
-		color: $postP;
+		color: $postColor;
 		font-size: 26px;
 		font-weight: 300;
 		line-height: 1.5;
+	}
+	em {
+		font-style: italic;
+	}
+	strong {
+		font-weight: bold;
 	}
 	a {
 		color: $linkColor;
 		text-decoration: none;
 	}
+	ul {
+		margin: 20px 0px;
+	}
+	li {
+		font-family: "rooney-web";
+		color: $postColor;
+		font-size: 26px;
+		font-weight: 300;
+		line-height: 1.5;
+		ul {
+			margin: 0px 0px 0px 50px;
+			li {
+				font-size: 24px;
+				list-style: circle;
+			}
+		}
+	}
+	pre {
+		@include box_sizing;
+		color: $postColor;
+		font-family: "Monaco", monospace;
+		border-top:	1px dashed rgba(0,0,0,.1);
+		border-bottom: 1px dashed rgba(0,0,0,.1);
+		padding: 20px;
+		margin-bottom: 37px;
+		code {
+			line-height: 1.42em;
+		}
+	}
+
 }
 
 .post-form {
@@ -108,17 +158,16 @@ article.post {
 			line-height: 2;
 		}
 		input[type="text"], textarea {
+			background-color: $backgroundColor;
 			@include box_sizing;
-			// background-color: #F7EEE5;
-			font-family: "source-sans-pro", sans-serif;
+			color: $postColor;
+			font-size: 22px;
+			font-weight: 300;
+			line-height: 1.5;
 			display: block;
 			width: 100%;
 			box-shadow: none;
 			border: none;
-			color: #444444;
-			font-size: 22px;
-			font-weight: 400;
-			line-height: 1.45;
 			border-radius: 10px;
 			margin-top: 25px;
 			&:focus {
@@ -127,6 +176,7 @@ article.post {
 			}
 		}
 		textarea {
+			font-family: "rooney-web";
 			overflow: auto;
 		}
 		input[type="checkbox"] {
