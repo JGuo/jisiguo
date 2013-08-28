@@ -122,23 +122,22 @@ header {
 		}
 }
 
+.northwestern {
+	color: #520063 !important;
+}
 
-#about-bubble {
-	background-color: #ffffff;
-	height: 45px;
-	div {
-		margin: 0px auto;
-		max-width: 700px;
-	}
-	p {
-		text-align: center;
-		color: #999999;
-		font-size: 22px;
-		font-weight: 400;
-		line-height: 45px;
-		a {
-			color: #444444;
-			text-decoration: none;
-		}
-	}
+.ribbon {
+	color: #FF743D !important;
+}
+
+.twitter {
+	color: #00ACED !important;
+}
+
+.dribbble {
+	color: #ea4c89 !important;
+}
+
+.linkedin {
+	color: #007bb6 !important;
 }
