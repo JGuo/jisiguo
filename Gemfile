@@ -6,6 +6,8 @@ gem 'rails', '4.0.0'
 gem "redcarpet", "~> 2.2.2"
 gem "github-markdown", "~> 0.5.3"
 gem "jquery-turbolinks", "~> 0.2.1"
+gem 'friendly_id', '5.0.0.beta4'
+
 
 # Use sqlite3 as the database for Active Record
 group :production do
@@ -17,7 +19,7 @@ group :development, :test do
 end
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0.rc1'
+gem 'sass-rails', '~> 4.0.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

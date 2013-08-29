@@ -15,7 +15,10 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.find_by_id(params[:id])
+    @post = Post.find(params[:id])
+    if request.path != post_path(@post)
+      redirect_to @post, status: :moved_permanently
+    end
   end
 
   def new
@@ -25,18 +28,18 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     if @post.save
-      redirect_to root_path
+      redirect_to @post
     else
       render "new"
     end
   end
 
   def edit
-    @post = Post.find_by_id(params[:id])
+    @post = Post.find(params[:id])
   end
 
   def update
-    @post = Post.find_by_id(params[:id])
+    @post = Post.find(params[:id])
     @post.update_attributes(post_params)
     if @post.update_attributes(post_params)
       render "show"
