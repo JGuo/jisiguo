@@ -2,14 +2,14 @@ $(function(){
 	console.log("ready!");
 
 	var text = ["I'm a <a class=\"northwestern\" target=\"_blank\"href=\"http://espn.go.com/college-football/team/_/id/77/northwestern-wildcats\">Northwestern</a> alum, Go 'Cats!"
-	,"I love snowboarding, nothing beats a powder day."
+	,"I love snowboarding, nothing beats a <a target=\"_blank\"href=\"http://www.onthesnow.com/lake-tahoe/skireport.html\">powder day</a>."
 	,"I was the Head of Product at <a class=\"ribbon\" target=\"_blank\"href=\"http://www.ribbon.co\">Ribbon</a>."
 	,"I was raised in the Windy City."
 	,"You should follow me on <a class=\"dribbble\" target=\"_blank\"href=\"http://www.dribbble.com/jisiguo\">Dribbble</a>."
 	,"You should follow me on <a class=\"twitter\" target=\"_blank\"href=\"http://www.twitter.com/jisiguo\">Twitter</a>."
-	,"I will usually say yes to an adventure."
+	,"I can never turn down a good adventure."
 	,"I studied design, engineering and economics."
-	,"I love to travel and explore the world."
+	,"I love traveling and exploring the world."
 	,"Minimalism tends to guide my design decisions."
 	,"I created <a target=\"_blank\"href=\"http://www.builtinchicago.org/community/questions?title=&field_answer_count_value=&created=&last_updated=&sort_by=created&sort_order=DESC\">Chicago Founders</a>, a community for entrepreneurs."
 	,"I've lived in Istanbul during two summers in college."

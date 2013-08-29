@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Jisiguo</title>
+  <title>Jisi Guo</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -9,6 +9,9 @@
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   <%= render 'layouts/typekit' %>
+   <script type="text/javascript">
+      var disqus_url = '<%= request.original_url %>';
+   </script>
 </head>
 <body>
   <div id="app">

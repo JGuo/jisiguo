@@ -4,3 +4,4 @@
 	<h2 class="post-date">Posted <%= distance_of_time_in_words_to_now(@post.updated_at) %> ago</h2>
 	<div class="post-body"><%= markdown(@post.body) %></div>
 </article>
+<%= render 'posts/disqus' %>
