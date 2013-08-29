@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby "2.0.0"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0.rc1'
+gem 'rails', '4.0.0'
 gem "redcarpet", "~> 2.2.2"
 gem "github-markdown", "~> 0.5.3"
 gem "jquery-turbolinks", "~> 0.2.1"
