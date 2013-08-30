@@ -1,4 +1,4 @@
-<div class="post-cover" style="background-image:url(&quot;<%= ActionController::Base.helpers.asset_path(@post.photo) %>&quot;);"></div>
+<div class="post-cover" <% if @post.photo? %>style="background-image:url(&quot;<%= ActionController::Base.helpers.asset_path(@post.photo) %>&quot;);"<% end %>></div>
 <div class="post-form">
 	<%= form_for(@post) do |f| %>
 
