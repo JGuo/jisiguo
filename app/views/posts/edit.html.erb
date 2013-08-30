@@ -1,3 +1,4 @@
+<div class="post-cover" style="background-image:url(&quot;<%= ActionController::Base.helpers.asset_path(@post.photo) %>&quot;);"></div>
 <div class="post-form">
 	<%= form_for(@post) do |f| %>
 
@@ -6,6 +7,9 @@
 
 		<%= f.label :body %>
 		<%= f.text_area :body, rows:"30" , placeholder: @post.post_example %>
+
+		<%= f.label :photo %>
+		<%= f.text_field :photo, placeholder: "photo.png" %>
 
 		<%= f.label :tag %>
 		<%= f.text_field :tag, placeholder: "Add a Tag" %>
