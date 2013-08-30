@@ -2,14 +2,20 @@
 #
 # Table name: posts
 #
-#  id         :integer          not null, primary key
-#  title      :string(255)
-#  body       :text
-#  date       :datetime
-#  tag        :string(255)
-#  published  :boolean
-#  created_at :datetime
-#  updated_at :datetime
+#  id                 :integer          not null, primary key
+#  title              :string(255)
+#  body               :text
+#  date               :datetime
+#  tag                :string(255)
+#  published          :boolean
+#  created_at         :datetime
+#  updated_at         :datetime
+#  slug               :string(255)
+#  photo_file_name    :string(255)
+#  photo_content_type :string(255)
+#  photo_file_size    :integer
+#  photo_updated_at   :datetime
+#  photo              :string(255)
 #
 
 class Post < ActiveRecord::Base
