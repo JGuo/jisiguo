@@ -14,5 +14,6 @@
 		<%= f.check_box :published %>
 
 		<%= f.button "Update Post", class: "button" %>
+		<%= link_to 'Delete Post?', @post, :confirm => "Are you sure?", :method => :delete, :class => "button" %>
 	<% end %>
 </div>

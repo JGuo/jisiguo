@@ -1,7 +1,10 @@
 <div class="post-cover"></div>
 <article class="post">
+	<div class="show-post-date">
+		<span class="stamp-month"><%= @post.created_at.localtime.strftime("%b") %></span>
+		<span class="stamp-date"><%= @post.created_at.localtime.day %></span>
+	</div>
 	<h1 class="post-title"><%= @post.title %></h1>
-	<h2 class="post-date">Posted <%= distance_of_time_in_words_to_now(@post.updated_at) %> ago</h2>
 	<div class="post-body"><%= markdown(@post.body) %></div>
 </article>
 <%= render 'posts/disqus' %>
