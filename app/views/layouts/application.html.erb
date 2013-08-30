@@ -9,15 +9,12 @@
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   <%= render 'layouts/typekit' %>
-   <script type="text/javascript">
-      var disqus_url = '<%= request.original_url %>';
-   </script>
+  <%= render 'layouts/google_analytics' %>
 </head>
 <body>
   <div id="app">
     <%= render 'layouts/header' %>
     <div class="content-container">
-      <div class="default-cover"></div>
 	    <%= yield %>
     </div>
   </div>

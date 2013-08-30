@@ -4,7 +4,7 @@
 <div class="tagline">Thoughts and Ramblings</div>
 
 <div class="article-index">
-	<%= render @posts.reverse %>
+	<%= render @posts.order(:created_at).reverse %>
 </div>
 
 
