@@ -1,3 +1,5 @@
+$statusColor: #1ABC9C;
+
 @mixin transition {
 	transition: all .5s ease;
 }
@@ -16,7 +18,7 @@
 	}
 	.social-mail {
 	&:hover {
-		color: #eb5252;
+		color: $statusColor;
 	}
 }
 
@@ -54,17 +56,16 @@
 	line-height: 1.5;
 	color: rgba(0,0,0,.3);
 	.status-button {
-
 		font-weight: 700;
-		color: green;
+		color: $statusColor;
 		border-bottom: 1px dotted rgba(0,0,0,.3);
 		text-decoration: none;
 		@include transition;
 		&:hover {
 			padding: 3px 13px;
 			margin: 0px 10px;
-			border: 3px solid green;
-			border-radius: 5px;
+			border: 4px solid $statusColor;
+			border-radius: 8px;
 		}
 	}
 }
