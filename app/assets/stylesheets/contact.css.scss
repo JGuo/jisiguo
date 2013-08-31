@@ -1,0 +1,71 @@
+@mixin transition {
+	transition: all .5s ease;
+}
+
+.social {
+	text-align: center;
+	margin-bottom: 40px;
+	a {
+		padding: 0px 10px;
+	}
+	.typcn {
+		vertical-align: middle;
+		font-size: 75px;
+		color: rgba(0,0,0,.2);
+		@include transition;
+	}
+	.social-mail {
+	&:hover {
+		color: #eb5252;
+	}
+}
+
+	.social-twitter {
+		position: relative;
+		top: 4px;
+		&:hover {
+			color: #00ACED;
+		}
+	}
+
+	.social-dribbble {
+		position: relative;
+		top: 4px;
+		&:hover {
+			color: #ea4c89;
+		}
+	}
+
+	.social-linkedin {
+		&:hover {
+			color: #007bb6;
+		}
+	}
+}
+
+.status {
+	margin-top: 50px;
+	text-align: center;
+	font-family: "source-sans-pro";
+	font-weight: 600;
+	margin-bottom: 37px;
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1.5;
+	color: rgba(0,0,0,.3);
+	.status-button {
+
+		font-weight: 700;
+		color: green;
+		border-bottom: 1px dotted rgba(0,0,0,.3);
+		text-decoration: none;
+		@include transition;
+		&:hover {
+			padding: 3px 13px;
+			margin: 0px 10px;
+			border: 3px solid green;
+			border-radius: 5px;
+		}
+	}
+}
+

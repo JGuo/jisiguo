@@ -98,86 +98,85 @@ article.post {
 		font-size: 26px;
 		font-weight: 300;
 		line-height: 1.5;
-	}
-	h1 {
+		h1 {
 		color: $postH1;
 		font-size: 36px;
 		font-weight: 700;
 		line-height: 1;
 		margin-bottom: 5px;
-	}
-	h2{
-		color: $postH2;
-		font-size: 32px;
-		font-weight: 700;
-		line-height: 1.2;
-		margin-bottom: 15px;
-	}
-	h3 {
-		color: $postH3;
-		font-size: 28px;
-		font-weight: 700;
-		line-height: 1.2;
-		margin-bottom: 15px;
-	}
-	hr {
-		margin: 5em 8em;
-		border: 1px solid rgba(0,0,0,.1);
-	}
-	div.post-body {
-		margin-top: 25px;
-	}
-	p {
-		font-family: "rooney-web";
-		margin-bottom: 37px;
-		color: $postColor;
-		font-size: 26px;
-		font-weight: 300;
-		line-height: 1.5;
-	}
-	iframe {
-		margin-bottom: 37px;
-	}
-	em {
-		font-style: italic;
-	}
-	strong {
-		font-weight: 600;
-	}
-	a {
-		color: $linkColor;
-		text-decoration: none;
-	}
-	ul {
-		margin: 20px 0px;
-	}
-	li {
-		font-family: "rooney-web";
-		color: $postColor;
-		font-size: 26px;
-		font-weight: 300;
-		line-height: 1.5;
+		}
+		h2{
+			color: $postH2;
+			font-size: 32px;
+			font-weight: 700;
+			line-height: 1.2;
+			margin-bottom: 15px;
+		}
+		h3 {
+			color: $postH3;
+			font-size: 28px;
+			font-weight: 700;
+			line-height: 1.2;
+			margin-bottom: 15px;
+		}
+		hr {
+			margin: 5em 8em;
+			border: 1px solid rgba(0,0,0,.1);
+		}
+		div.post-body {
+			margin-top: 25px;
+		}
+		p {
+			font-family: "rooney-web";
+			margin-bottom: 37px;
+			color: $postColor;
+			font-size: 26px;
+			font-weight: 300;
+			line-height: 1.5;
+		}
+		iframe {
+			margin-bottom: 37px;
+		}
+		em {
+			font-style: italic;
+		}
+		strong {
+			font-weight: 600;
+		}
+		a {
+			color: $linkColor;
+			text-decoration: none;
+		}
 		ul {
-			margin: 0px 0px 0px 50px;
-			li {
-				font-size: 24px;
-				list-style: circle;
+			margin: 20px 0px;
+		}
+		li {
+			font-family: "rooney-web";
+			color: $postColor;
+			font-size: 26px;
+			font-weight: 300;
+			line-height: 1.5;
+			ul {
+				margin: 0px 0px 0px 50px;
+				li {
+					font-size: 24px;
+					list-style: circle;
+				}
+			}
+		}
+		pre {
+			@include box_sizing;
+			color: $postColor;
+			font-family: "Monaco", monospace;
+			border-top:	1px dashed rgba(0,0,0,.1);
+			border-bottom: 1px dashed rgba(0,0,0,.1);
+			padding: 20px;
+			margin-bottom: 37px;
+			code {
+				line-height: 1.42em;
 			}
 		}
 	}
-	pre {
-		@include box_sizing;
-		color: $postColor;
-		font-family: "Monaco", monospace;
-		border-top:	1px dashed rgba(0,0,0,.1);
-		border-bottom: 1px dashed rgba(0,0,0,.1);
-		padding: 20px;
-		margin-bottom: 37px;
-		code {
-			line-height: 1.42em;
-		}
-	}
-
 }
 
 .post-form {
