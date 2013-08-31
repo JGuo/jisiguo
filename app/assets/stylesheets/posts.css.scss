@@ -53,6 +53,7 @@ article.post {
 		font-weight: 700;
 		line-height: 1;
 		@include transition;
+		margin-bottom: 20px;
 	}
 	.main-title {
 		@extend .post-title;
