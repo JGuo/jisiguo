@@ -1,10 +1,42 @@
 <div class="work-cover">
 </div>
-<div class="tagline">Selected Work</div>
+<div class="tagline">Selected work and projects</div>
 <article class="post">
-	<h1 class="main-title">Projects</h1>
-	<div class="post-body">
-		<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-	</div>
+	<%= link_to(ferrari_path, class:"article-link") do %>
+		<div class="post-date">
+			<span class="stamp-month">JAN</span>
+			<span class="stamp-date">31</span>
+		</div>
+		<h1 class="post-title">Ribbon</h1>
+		<div class="post-body">I have been a long time fan of Ferrari. Their cars are a pure representation of form following function. I wanted to capture the design language of Ferrari and translate that to the design of a sound system.</div>
+	<% end %>
+</article>
+
+<article class="post">
+	<%= link_to(ferrari_path, class:"article-link") do %>
+		<h1 class="post-title">Exec</h1>
+		<div class="post-body">I have been a long time fan of Ferrari. Their cars are a pure representation of form following function. I wanted to capture the design language of Ferrari and translate that to the design of a sound system.</div>
+	<% end %>
+</article>
+
+<article class="post">
+	<%= link_to(ferrari_path, class:"article-link") do %>
+		<h1 class="post-title">Ferrari Design Language</h1>
+		<div class="post-body">I have been a long time fan of Ferrari. Their cars are a pure representation of form following function. I wanted to capture the design language of Ferrari and translate that to the design of a sound system.</div>
+	<% end %>
+</article>
+
+<article class="post">
+	<%= link_to(ferrari_path, class:"article-link") do %>
+		<h1 class="post-title">Ferrari Design Language</h1>
+		<div class="post-body">I have been a long time fan of Ferrari. Their cars are a pure representation of form following function. I wanted to capture the design language of Ferrari and translate that to the design of a sound system...</div>
+	<% end %>
+</article>
+
+<article class="post">
+	<%= link_to(snocom_path, class:"article-link") do %>
+		<h1 class="post-title">Snocom Concept</h1>
+		<div class="post-body">Snocom was a project to develop a device for snow sports enthusiasts that would allow for readily accessible communication. As an avid snowboarder, I found that it was quite difficult to communicate while at mountain ski resorts. In order to further develop this idea, we conducted ethnographic research and analyzed the marketplace...</div>
+	<% end %>
 </article>
 

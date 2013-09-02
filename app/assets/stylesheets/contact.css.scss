@@ -49,14 +49,12 @@ $statusColor: #1ABC9C;
 	margin-top: 50px;
 	text-align: center;
 	font-family: "source-sans-pro";
-	font-weight: 600;
 	margin-bottom: 37px;
 	font-size: 28px;
-	font-weight: 700;
+	font-weight: 600;
 	line-height: 1.5;
 	color: rgba(0,0,0,.3);
 	.status-button {
-		font-weight: 700;
 		color: $statusColor;
 		border-bottom: 1px dotted rgba(0,0,0,.3);
 		text-decoration: none;

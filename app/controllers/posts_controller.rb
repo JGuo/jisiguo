@@ -53,6 +53,27 @@ class PostsController < ApplicationController
     redirect_to blog_path
   end
 
+  def ribbon
+  end
+
+  def exec
+  end
+
+  def accenture
+  end
+
+  def chicagofounders
+  end
+
+  def googlecafes
+  end
+
+  def ferrari
+  end
+
+  def snocom
+  end
+
   private
     def post_params
       params.require(:post).permit(:title, :body, :tag, :published, :photo)
