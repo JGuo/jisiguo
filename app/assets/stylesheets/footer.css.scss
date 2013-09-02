@@ -1,0 +1,18 @@
+/* mixins, variables, etc. */
+
+$grayMediumLight: #eaeaea;
+$backgroundColor: #fcfcff;
+$headerColor: rgba(0,0,0,.3);
+$headerHover: #404149;
+// $headerHover: #42b4c0;
+$linkColor: #404149;
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#footer {
+	background-color: $backgroundColor;
+}
