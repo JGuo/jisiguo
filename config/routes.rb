@@ -12,13 +12,13 @@ Jisiguo::Application.routes.draw do
   match '/contact', to: 'posts#contact', via: 'get', as: 'contact'
   match '/blog', to: 'posts#index', via: 'get', as: 'blog'
 
-  match '/ribbon', to: 'posts#ribbon', via: 'get', as: 'ribbon'
-  match '/exec', to: 'posts#exec', via: 'get', as: 'exec'
-  match '/chicagofounders', to: 'posts#chicagofounders', via: 'get', as: 'chicagofounders'
-  match '/googlecafes', to: 'posts#googlecafes', via: 'get', as: 'googlecafes'
-  match '/accenture', to: 'posts#accenture', via: 'get', as: 'accenture'
-  match '/ferrari', to: 'posts#ferrari', via: 'get', as: 'ferrari'
-  match '/snocom', to: 'posts#snocom', via: 'get', as: 'snocom'
+  match 'work/ribbon', to: 'posts#ribbon', via: 'get', as: 'ribbon'
+  match 'work/exec', to: 'posts#exec', via: 'get', as: 'exec'
+  match 'work/chicagofounders', to: 'posts#chicagofounders', via: 'get', as: 'chicagofounders'
+  match 'work/googlecafes', to: 'posts#googlecafes', via: 'get', as: 'googlecafes'
+  match 'work/accenture', to: 'posts#accenture', via: 'get', as: 'accenture'
+  match 'work/ferrari', to: 'posts#ferrari', via: 'get', as: 'ferrari'
+  match 'work/snocom', to: 'posts#snocom', via: 'get', as: 'snocom'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
