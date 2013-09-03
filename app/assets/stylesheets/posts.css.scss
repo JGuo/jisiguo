@@ -23,9 +23,9 @@ $linkColor: #42b4c0;
 
 /* End mixins, variables, etc. */
 
-article.post {
+article.post, article.index-post {
 	max-width: 700px;
-	padding: 60px 0px 0px 0px;
+	padding: 60px 0px 60px 0px;
 	margin: 0px auto;
 	&:first-child {
 		margin-top: 0px;
@@ -94,7 +94,7 @@ article.post {
 	}
 	.post-body {
 		font-family: "rooney-web";
-		margin-bottom: 37px;
+		// margin-bottom: 37px;
 		color: $postColor;
 		font-size: 26px;
 		font-weight: 300;
@@ -134,6 +134,9 @@ article.post {
 			font-size: 26px;
 			font-weight: 300;
 			line-height: 1.5;
+			&:last-child {
+				margin-bottom: 0px;
+			}
 		}
 		iframe {
 			margin-bottom: 37px;
@@ -177,6 +180,13 @@ article.post {
 				line-height: 1.42em;
 			}
 		}
+	}
+}
+
+article.index-post {
+	padding: 60px 0px 0px 0px;
+	&:last-child {
+		padding: 60px 0px 60px 0px;;
 	}
 }
 
