@@ -1,0 +1,79 @@
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.about-me {
+		display: none;
+	}
+	header {
+		height: 54px;
+		a.home {
+			font-size: 35px;
+			height: 54px;
+			line-height: 61px;
+			padding: 0px 10px;
+		}
+	}
+
+	.default-cover, .about-cover, .blog-cover, .work-cover, .contact-cover, .post-cover {
+		height: 300px;
+	}
+
+	.content-container {
+		margin-top: 235px;
+	}
+
+	.tagline {
+		font-size: 30px;
+		top: 144px;
+		padding: 0px 10px;
+	}
+
+	article.post {
+		padding: 40px 20px;
+		.post-title, .main-title {
+			font-size: 30px;
+		}
+		.post-body {
+			font-size: 20px;
+			p {
+				font-size: 20px;
+			}
+		}
+	}
+
+	article.index-post {
+		@extend article.post;
+		padding: 40px 20px 0px 20px;
+		&:last-child {
+			padding: 40px 20px;
+		}
+	}
+
+	#disqus_thread {
+		padding: 0px 20px;
+	}
+
+	.status-footer {
+		font-size: 12px;
+		.status-button {
+			&:hover {
+				border: 2px solid #1ABC9C;
+				border-radius: 4px;
+				padding: 3px 8px;
+				margin: 0px 5px;
+			}
+		}
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	.about-me {
+		display: none;
+	}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {  }
+
+/* Large desktop */
+@media (min-width: 1200px) {  }

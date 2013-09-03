@@ -1,3 +1,9 @@
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .tagline {
 	font-family: "source-sans-pro", sans-serif;
 	font-size: 50px;
@@ -7,4 +13,5 @@
 	top: 255px;
 	width: 100%;
 	text-align: center;
+	@include box_sizing;
 }

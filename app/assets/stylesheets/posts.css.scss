@@ -27,10 +27,6 @@ article.post, article.index-post {
 	max-width: 700px;
 	padding: 60px 0px 60px 0px;
 	margin: 0px auto;
-	&:first-child {
-		margin-top: 0px;
-		padding-top: 60px;
-	}
 	a.article-link {
 		display: block;
 		text-decoration: none;
@@ -49,7 +45,7 @@ article.post, article.index-post {
 	}
 	.post-title {
 		color: $postTitle;
-		font-size: 52px;
+		font-size: 50px;
 		font-weight: 700;
 		line-height: 1;
 		@include transition;
