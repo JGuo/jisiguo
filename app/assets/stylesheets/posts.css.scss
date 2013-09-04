@@ -103,6 +103,9 @@ article.post, article.index-post {
 		font-size: 26px;
 		font-weight: 300;
 		line-height: 1.5;
+		img {
+			max-width: 100%;
+		}
 		h1 {
 		color: $postH1;
 		font-size: 36px;
