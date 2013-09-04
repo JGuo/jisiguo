@@ -114,14 +114,18 @@ header {
 
 .about-me {
 	display: inline-block;
+	width: 484px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	line-height: 28px;
 }
 
 #about-me {
 		display: none;
 		font-family: "rooney-web";
-		margin-bottom: 37px;
 		color: rgba(0,0,0,.45);
-		font-size: 22px;
+		font-size: 20px;
 		font-weight: 400;
 		line-height: 20px;
 		// margin-left: 10px;
