@@ -87,6 +87,14 @@ article.post, article.index-post {
 	.show-post-date {
 		@extend .post-date;
 		opacity: 1;
+		a.tweet {
+			@include transition;
+			font-size: 50px;
+			color: $postDate;
+			&:hover {
+				color: rgba(0,0,0,.45);
+			}
+		}
 	}
 	.post-body {
 		font-family: "rooney-web";
