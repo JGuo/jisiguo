@@ -5,11 +5,19 @@
 	}
 	header {
 		height: 54px;
+		padding: 20px;
 		a.home {
 			font-size: 35px;
 			height: 54px;
 			line-height: 61px;
 			padding: 0px 10px;
+		}
+		nav.navigation {
+			margin: 0px;
+			a {
+				font-size: 18px;
+				margin-left: 15px;
+			}
 		}
 	}
 

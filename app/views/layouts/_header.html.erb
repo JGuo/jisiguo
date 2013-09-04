@@ -2,9 +2,9 @@
 	<%= link_to "吉", root_path, class:"home" %>
 	<div class="about-me"><span id="about-me"></span></div>
 	<nav class="navigation">
-		<%= link_to "About", about_path %>
-		<%= link_to "Work", work_path %>
-		<%= link_to "Blog", blog_path %>
-		<%= link_to "Contact", contact_path %>
+		<%= link_to "About", about_path, class:"#{'active' if current_page?(about_path)}" %>
+		<%= link_to "Work", work_path, class:"#{'active' if current_page?(work_path)}" %>
+		<%= link_to "Blog", blog_path, class:"#{'active' if current_page?(blog_path)}" %>
+		<%= link_to "Contact", contact_path, class:"#{'active' if current_page?(contact_path)}" %>
 	</nav>
 </header>
