@@ -3,7 +3,7 @@
 	<div class="show-post-date">
 		<span class="stamp-month"><%= @post.created_at.localtime.strftime("%b") %></span>
 		<span class="stamp-date"><%= @post.created_at.localtime.day %></span>
-		<a href="https://twitter.com/share" class="tweet" target="_blank" data-via="jisiguo" data-count="none"><span class="typcn typcn-social-twitter"><span></a>
+		<a href="https://twitter.com/share?url=<%= url_encode(request.original_url) %>&amp;text=<%= url_encode(@post.title)%>&amp;via=jisiguo" class="tweet" target="_blank" data-via="jisiguo" data-count="none"><span class="typcn typcn-social-twitter"><span></a>
 	</div>
 	<h1 class="post-title"><%= @post.title %></h1>
 	<div class="post-body"><%= markdown(@post.body) %></div>
