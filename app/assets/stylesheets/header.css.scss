@@ -79,7 +79,7 @@ header {
 	width: 100%;
 	top: 0;
 	z-index: -1;
-	background: #000000 url("scanner.jpg") center center no-repeat;
+	background: #000000 url("lines.jpg") center center no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
 	height: 500px;
@@ -91,17 +91,17 @@ header {
 
 .work-cover {
 	@extend .default-cover;
-	background-image: url("scanner2.jpg");
+	background-image: url("baybridge.jpg");
 }
 
 .blog-cover {
 	@extend .default-cover;
-	background-image: url("scanner2.jpg");
+	background-image: url("baybridge.jpg");
 }
 
 .contact-cover {
 	@extend .default-cover;
-	background-image: url("scanner3.jpg");
+	background-image: url("epicpanorama.jpg");
 }
 
 .post-cover {
