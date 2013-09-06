@@ -110,7 +110,7 @@ header {
 
 .ribbon-cover {
 	@extend .default-cover;
-	background-image: url("ribboncover.png");
+	background-image: url("ribbondevices.png");
 }
 
 .chicago-cover {
@@ -120,6 +120,7 @@ header {
 
 .accenture-cover {
 	@extend .default-cover;
+	background-image: url("accentureice.png");
 }
 
 .exec-cover {
