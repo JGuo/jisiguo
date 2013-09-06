@@ -96,7 +96,7 @@ header {
 
 .blog-cover {
 	@extend .default-cover;
-	background-image: url("baybridge.jpg");
+	background-image: url("golden.jpg");
 }
 
 .contact-cover {
@@ -114,7 +114,28 @@ header {
 }
 
 .chicago-cover {
+	@extend .default-cover;
+	background-image: url("chicago.jpg");
+}
 
+.accenture-cover {
+	@extend .default-cover;
+}
+
+.exec-cover {
+	@extend .default-cover;
+}
+
+.google-cover {
+	@extend .default-cover;
+}
+
+.ferrari-cover {
+	@extend .default-cover;
+}
+
+.snocom-cover {
+	@extend .default-cover;
 }
 
 .about-area {
