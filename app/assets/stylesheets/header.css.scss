@@ -108,6 +108,15 @@ header {
 	@extend .default-cover;
 }
 
+.ribbon-cover {
+	@extend .default-cover;
+	background-image: url("ribboncover.png");
+}
+
+.chicago-cover {
+
+}
+
 .about-area {
 	display: inline-block;
 }
