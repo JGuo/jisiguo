@@ -148,6 +148,12 @@ article.post, article.index-post {
 		p.img {
 			text-align: center;
 		}
+		blockquote {
+			font-style: italic;
+			padding-left: 25px;
+			border-left: 5px solid $linkColor;
+			margin-bottom: 37px;
+		}
 		em {
 			font-style: italic;
 		}
