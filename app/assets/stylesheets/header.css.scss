@@ -96,12 +96,12 @@ header {
 
 .blog-cover {
 	@extend .default-cover;
-	background-image: url("golden.jpg");
+	background-image: url("star.png");
 }
 
 .contact-cover {
 	@extend .default-cover;
-	background-image: url("epicpanorama.jpg");
+	background-image: url("grosse.png");
 }
 
 .post-cover {
@@ -120,23 +120,27 @@ header {
 
 .accenture-cover {
 	@extend .default-cover;
-	background-image: url("accentureice.png");
+	background-image: url("accenture.png");
 }
 
 .exec-cover {
 	@extend .default-cover;
+	background-image: url("exec.png");
 }
 
 .google-cover {
 	@extend .default-cover;
+	background-image: url("cafes.png");
 }
 
 .ferrari-cover {
 	@extend .default-cover;
+	background-image: url("ferrari.jpg");
 }
 
 .snocom-cover {
 	@extend .default-cover;
+	background-image: url("mammoth.jpg");
 }
 
 .about-area {

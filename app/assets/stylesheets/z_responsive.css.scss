@@ -73,6 +73,32 @@
 	}
 }
 
+@media (min-width: 481px) and (max-width: 767px) {
+	article.post {
+		padding: 40px 25px;
+	}
+
+	article.index-post {
+		padding: 40px 25px 0px 25px;
+		&:last-child {
+			padding: 40px 25px 40px 25px;
+		}
+	}
+	.image-cover {
+		height: 400px;
+	}
+
+	.content-container {
+		margin-top: 335px;
+	}
+
+	.tagline {
+		font-size: 40px;
+		top: 205px;
+		padding: 0px 10px;
+	}
+}
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
 	.about-me {
@@ -82,8 +108,21 @@
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
+	.image-cover {
+		height: 400px;
+	}
+
+	.content-container {
+		margin-top: 335px;
+	}
 	.about-me {
 		display: none;
+	}
+
+	.tagline {
+		font-size: 40px;
+		top: 205px;
+		padding: 0px 10px;
 	}
 }
 
