@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  http_basic_authenticate_with :name => ENV['USERNAME'], :password => ENV['PASSWORD'], :only => [:edit, :update, :destroy] if Rails.env.production?
+  http_basic_authenticate_with :name => ENV['USERNAME'], :password => ENV['PASSWORD'], :only => [:new, :create, :edit, :update, :destroy] if Rails.env.production?
 
   def about
   end
