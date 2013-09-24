@@ -7,6 +7,7 @@ gem "redcarpet", "~> 2.2.2"
 gem "github-markdown", "~> 0.5.3"
 gem "jquery-turbolinks", "~> 0.2.1"
 gem 'friendly_id', '5.0.0.beta4'
+gem 'newrelic_rpm'
 
 
 # Use sqlite3 as the database for Active Record
