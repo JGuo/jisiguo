@@ -53,6 +53,12 @@ class PostsController < ApplicationController
     redirect_to blog_path
   end
 
+  def boosted
+  end
+
+  def rpmwest
+  end
+
   def ribbon
   end
 

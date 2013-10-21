@@ -116,6 +116,16 @@ header {
 	@extend .default-cover;
 }
 
+.boosted-cover {
+	@extend .default-cover;
+	background-image: url("boostedcover.png");
+}
+
+.rpmwest-cover {
+	@extend .default-cover;
+	background-image: url("rpmwest.jpg");
+}
+
 .ribbon-cover {
 	@extend .default-cover;
 	background-image: url("ribbondevices.png");

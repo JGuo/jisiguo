@@ -12,6 +12,8 @@ Jisiguo::Application.routes.draw do
   match '/contact', to: 'posts#contact', via: 'get', as: 'contact'
   match '/blog', to: 'posts#index', via: 'get', as: 'blog'
 
+  match 'work/boosted', to: 'posts#boosted', via: 'get', as: 'boosted'
+  match 'work/rpmwest', to: 'posts#rpmwest', via: 'get', as: 'rpmwest'
   match 'work/ribbon', to: 'posts#ribbon', via: 'get', as: 'ribbon'
   match 'work/exec', to: 'posts#exec', via: 'get', as: 'exec'
   match 'work/chicagofounders', to: 'posts#chicagofounders', via: 'get', as: 'chicagofounders'
