@@ -25,6 +25,55 @@ $linkColor: #42b4c0;
 
 /* End mixins, variables, etc. */
 
+.iphone-frame {
+	margin: 0px auto;
+	display: block;
+	background: url("iphone_white.png") no-repeat;
+	 background-position: center top;
+	padding-bottom: 298px;
+	.iphone-wrapper {
+		position: relative;
+	padding-bottom: 529px;
+	padding-top: 25px;
+	height: 0;
+	margin-bottom: 37px;
+	margin: 0px auto;
+	display: block;
+	width: 320px;
+		img {
+			width: 600px;
+		}
+		iframe {
+			margin: 0px auto;
+			display: block;
+			padding-top: 160px;
+			padding-bottom: 140px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+.media-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+	margin-bottom: 37px;
+}
+
+.media-wrapper iframe,
+.media-wrapper embed,  {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 article.post, article.index-post {
 	max-width: 700px;
 	padding: 60px 0px 60px 0px;
@@ -304,6 +353,8 @@ article.index-post {
 	width: 100%;
 	height: 100%;
 }
+
+
 
 
 

@@ -74,6 +74,16 @@
 			}
 		}
 	}
+	.iphone-frame {
+		background: none;
+		padding: 0px;
+	}
+	.iphone-wrapper {
+		width: 100% !important;
+		iframe {
+			padding: 0px !important;
+		}
+	}
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
