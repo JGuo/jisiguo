@@ -26,10 +26,11 @@ $linkColor: #42b4c0;
 /* End mixins, variables, etc. */
 
 .iphone-frame {
-	margin: 0px auto;
+	margin: 0px auto 40px;
 	display: block;
-	background: url("iphone_white.png") no-repeat;
-	 background-position: center top;
+	background: url("iphone_white@2x.png") no-repeat;
+	background-size:480px 870px;
+	background-position: center top;
 	padding-bottom: 298px;
 	.iphone-wrapper {
 		// overflow: hidden;
@@ -47,7 +48,7 @@ $linkColor: #42b4c0;
 		iframe {
 			margin: 0px auto;
 			display: block;
-			padding-top: 160px;
+			padding-top: 159px;
 			padding-bottom: 140px;
 			position: absolute;
 			top: 0;

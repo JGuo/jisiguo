@@ -14,7 +14,6 @@ Jisiguo::Application.routes.draw do
 
   match 'work/rpmwest', to: 'posts#rpmwest', via: 'get', as: 'rpmwest'
   match 'work/ribbon', to: 'posts#ribbon', via: 'get', as: 'ribbon'
-  match 'work/exec', to: 'posts#exec', via: 'get', as: 'exec'
   match 'work/chicagofounders', to: 'posts#chicagofounders', via: 'get', as: 'chicagofounders'
   match 'work/googlecafes', to: 'posts#googlecafes', via: 'get', as: 'googlecafes'
   match 'work/accenture', to: 'posts#accenture', via: 'get', as: 'accenture'
