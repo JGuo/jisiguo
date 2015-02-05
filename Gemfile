@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby "2.2.0"
+ruby "2.0.0"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
@@ -8,7 +8,6 @@ gem "github-markdown", "~> 0.5.3"
 gem "jquery-turbolinks", "~> 0.2.1"
 gem 'friendly_id', '5.0.0.beta4'
 gem 'newrelic_rpm'
-gem 'json', '1.8.0'
 
 
 # Use sqlite3 as the database for Active Record
