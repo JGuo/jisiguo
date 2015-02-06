@@ -1,0 +1,106 @@
+/* mixins, variables, etc. */
+
+$backgroundColor: #fcfcff;
+$grayMediumLight: #eaeaea;
+$postTitle: #404149;
+$postDate: rgba(0,0,0,.3);
+$postH1: #404149;
+$postH2: #404149;
+$postH3: #404149;
+$postColor: #63646b;
+$linkColor: #42b4c0;
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@mixin transition {
+	-webkit-transition: all 0.3s ease;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.3s ease;  /* Firefox 4-15 */
+       -o-transition: all 0.3s ease;  /* Opera 10.50–12.00 */
+          transition: all 0.3s ease;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+}
+
+/* End mixins, variables, etc. */
+
+.work-container {
+	max-width: 960px;
+	margin: 0px auto 0px;
+	padding: 60px 0px 20px;
+	text-align: center;
+}
+
+.work-card {
+	width: 30%;
+	margin: 1%;
+	border-radius: 5px;
+	height: 180px;
+	background-color: #999999;
+	display: inline-block;
+	@include transition;
+	-webkit-transform: translatez(0);
+  -moz-transform: translatez(0);
+  -ms-transform: translatez(0);
+  -o-transform: translatez(0);
+  transform: translatez(0);
+	&:hover {
+    @include transition;
+    box-shadow: 4px 6px 20px rgba(0,0,0,.3);
+    transform: scale(1.05,1.05);
+  }
+}
+
+.camoji-card {
+	background: url("camoji.png") no-repeat;
+	background-size: 170px;
+	background-position: center center;
+	background-color: #4CB1FA;
+}
+
+.karmaswipe-card {
+	background: url("karmaswipe-card.png") no-repeat;
+	background-size: 180px;
+	background-position: center center;
+	background-color: #333333;
+}
+
+.leo-card {
+	background: url("leo-card.png") no-repeat;
+	background-size: 100px;
+	background-position: center center;
+	background-color: #52E19D;
+}
+
+.jobr-card {
+	background: url("jobr-card.png") no-repeat;
+	background-size: 100px;
+	background-position: center center;
+	background-color: #0D74FF;
+}
+
+.rpmwest-card {
+	background: url("rpmwest-card.png") no-repeat;
+	background-size: 180px;
+	background-position: center center;
+	background-color: #343943;
+}
+
+.ribbon-card {
+	background: url("ribbon-card.png") no-repeat;
+	background-size: 150px;
+	background-position: center center;
+	background-color: #4A86C3;
+}
+
+.jobr-card {
+	background: url("jobr-card.png") no-repeat;
+	background-size: 100px;
+	background-position: center center;
+	background-color: #0A74FF;
+}
+
+
+
+
